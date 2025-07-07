@@ -61,14 +61,14 @@ class HScript {
 	public function call(funcName:String, ?args:Array<Dynamic>):Dynamic {
 		if (exists(funcName)) {
 			try {
-				return Reflect.callMethod(this, getVariable(funcName), args == null ? [] : args);
+				return Reflect.callMethod(this, get(funcName), args == null ? [] : args);
 			} catch (e:Dynamic)
 				returnError(e);
 		}
 		return null;
 	}
 
-    public function returnError(e:Dynamic):Void {
+    public function returnError(e:Dynamic):Dynamic {
         throw 'HScript error: ${Std.string(e)}';
     }
 }
