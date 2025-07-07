@@ -1,0 +1,14 @@
+{
+    "name": "hscript-joalor64gh",
+    "url": "https://github.com/JoaTH-Team/hscript-joalor64gh",
+    "license": "MIT",
+    "tags": [],
+    "description": "Easy HScript, code from Joalor64GH",
+    "version": "1.0.0",
+    "releasenote": "message.reporting=pretty",
+    "contributors": ["khuonghoanghuy", "Joalor64GH"],
+    "classPath": "",
+    "dependencies": {
+        "hscript": "2.6.0"
+    }
+}
