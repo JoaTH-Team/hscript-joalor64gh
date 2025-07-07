@@ -7,7 +7,6 @@ Only git is possible, run:
 - Thought hmm: `hmm git hscript-joalor64gh https://github.com/JoaTH-Team/hscript-joalor64gh.git main`
 
 ## Example
-- Call function
 ```haxe
 // executeMe.txt
 function new() {
