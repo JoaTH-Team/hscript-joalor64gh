@@ -1,0 +1,5 @@
+-cp source
+-D analyzer-optimize
+-main Main
+--library hscript:2.6.0
+--interp

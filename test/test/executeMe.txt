@@ -1,0 +1,3 @@
+function onRun() {
+    trace('number: ' + cool);
+}
