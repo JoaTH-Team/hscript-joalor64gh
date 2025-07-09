@@ -9,6 +9,7 @@ class HScript {
     public var parser:Parser = new Parser();
 
     public function new(?file:String, ?execute:Bool = false) {
+        parser.allowJSON = parser.allowTypes = parser.allowMetadata = true;
         parser.preprocesorValues = Macros.getDefines();
 
         if (execute && file != null)
