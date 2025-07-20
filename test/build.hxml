@@ -1,4 +1,5 @@
 -cp source
+-cp ../
 -D analyzer-optimize
 -main Main
 --library hscript:2.6.0

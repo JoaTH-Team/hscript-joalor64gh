@@ -25,13 +25,13 @@ class HScript {
     			['DateTools', DateTools],
     			['Dynamic', Dynamic],
     			['EReg', EReg],
-    			#if sys ['File', File], ['FileSystem', FileSystem], #end
+    			#if sys ['File', sys.io.File], ['FileSystem', sys.FileSystem], #end
     			['Float', Float],
     			['Int', Int],
-    			['Json', Json],
+    			['Json', haxe.Json],
     			['Lambda', Lambda],
     			['Math', Math],
-    			['Path', Path],
+    			['Path', haxe.io.Path],
     			['Reflect', Reflect],
     			['Std', Std],
     			['StringBuf', StringBuf],
