@@ -16,6 +16,36 @@ class HScript {
             executeFile(file);
     }
 
+    public function initConfig(allowPreImported:Bool = true) {
+        if (allowPreImported) {
+            var haxeClasses:Array<Dynamic> = [
+    			['Array', Array],
+    			['Bool', Bool],
+    			['Date', Date],
+    			['DateTools', DateTools],
+    			['Dynamic', Dynamic],
+    			['EReg', EReg],
+    			#if sys ['File', File], ['FileSystem', FileSystem], #end
+    			['Float', Float],
+    			['Int', Int],
+    			['Json', Json],
+    			['Lambda', Lambda],
+    			['Math', Math],
+    			['Path', Path],
+    			['Reflect', Reflect],
+    			['Std', Std],
+    			['StringBuf', StringBuf],
+    			['String', String],
+    			['StringTools', StringTools],
+    			#if sys ['Sys', Sys], #end
+    			['Type', Type],
+    			['Xml', Xml]
+    		];
+            for (pair in haxeClasses)
+    			set(pair[0], pair[1]);
+        }
+    }
+
     public function executeFile(file:String):Void {
         try {
             interp.execute(parser.parseString(File.getContent(file)));
