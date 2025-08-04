@@ -5,7 +5,7 @@ class Main {
     
     static function main() {
         script = new HScript("test/executeMe.txt", true);
-        script.initConfig(); // Init all default Haxe classes
+        script.initConfig(); // Init some default Haxe classes
         script.set("cool", 12345);
         script.call("onRun", []);
     }
